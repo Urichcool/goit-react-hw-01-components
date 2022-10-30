@@ -1,5 +1,6 @@
 import PropTypes from 'prop-types';
 import {
+  ProfileContainer,
   ProfileImg,
   ProfileName,
   ProfileStats,
@@ -8,7 +9,7 @@ import {
   ProfileStatsText,
   ProfileStatsAmount
 } from './Profile.styled';
-import { ProfileContainer } from './Profile.styled';
+
 
 export const Profile = ({ username, tag , location, avatar, stats }) => {
   return (

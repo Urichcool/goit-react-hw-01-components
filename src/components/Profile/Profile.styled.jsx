@@ -31,7 +31,7 @@ export const ProfileName = styled.p`
 `;
 
 export const ProfileText = styled.p`
-  color:gray;
+  color: gray;
   font-size:16px;
 `;
 
@@ -41,20 +41,17 @@ export const ProfileStatsText = styled.span`
   margin-bottom: 5px;
 `;
 
-
 export const ProfileStatsAmount = styled.span`
   font-size: 20px;
   font-weight: 600;
 `;
-
-
 
 export const ProfileStats = styled.ul`
   display: flex;
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 300px;
+  width:100%;
   background-color: #eef3f8;
   border-top: solid 1px #e2e1e1;
 `;
@@ -65,7 +62,7 @@ export const ProfileStatsItem = styled.li`
   align-items: center;
   flex-direction: column;
   border-right: solid 1px #e2e1e1;
-  width: 100px;
+  width: 100%;
   height: 90px;
   &&:last-child {
     border: none;
