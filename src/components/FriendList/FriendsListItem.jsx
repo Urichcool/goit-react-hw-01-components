@@ -9,7 +9,7 @@ import {
 export const FriendsListItem = ({ avatar, name, isOnline }) => {
     return (
       <FriendsListItemLi>
-        <FriendsListItemStatus type={isOnline.toString()} />
+        <FriendsListItemStatus status={isOnline.toString()} />
         <img src={avatar} alt="User avatar" width="48" />
         <FriendsListItemName>{name}</FriendsListItemName>
       </FriendsListItemLi>
@@ -17,7 +17,7 @@ export const FriendsListItem = ({ avatar, name, isOnline }) => {
 }
 
 FriendsListItem.propTypes = {
-  avatar: PropTypes.string,
+  avatar: PropTypes.string.isRequired,
   name: PropTypes.string.isRequired,
   isOnline: PropTypes.bool.isRequired,
 };

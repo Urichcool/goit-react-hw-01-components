@@ -40,14 +40,9 @@ export const FriendsListItemStatus = styled.span`
   margin-left:10px;
   margin-right: 10px;
   background-color: ${props => { 
-  if (props.type === 'true') {
+  if (props.status === 'true') {
     return 'green;';
   }
-  else {
     return 'red'
-  }
   }};
 `;
-FriendsListItemStatus.propTypes = {
-  type: PropTypes.string.isRequired
-};
