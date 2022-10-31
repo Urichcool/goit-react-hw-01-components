@@ -6,7 +6,7 @@ export const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 60px;
+
   width: 300px;
   margin-left: auto;
   margin-right: auto;

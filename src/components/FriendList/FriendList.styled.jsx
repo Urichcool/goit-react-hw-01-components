@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import PropTypes from 'prop-types';
 
 export const FriendsListContainer = styled.ul`
   background-color: #f8f8f8;
@@ -31,3 +32,22 @@ export const FriendsListItemName = styled.p`
   margin: 0;
   margin-left: 10px;
 `;
+
+export const FriendsListItemStatus = styled.span`
+  border-radius:50%;
+  width: 12px;
+  height: 12px;
+  margin-left:10px;
+  margin-right: 10px;
+  background-color: ${props => { 
+  if (props.type === 'true') {
+    return 'green;';
+  }
+  else {
+    return 'red'
+  }
+  }};
+`;
+FriendsListItemStatus.propTypes = {
+  type: PropTypes.string.isRequired
+};
