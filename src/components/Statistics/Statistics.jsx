@@ -6,7 +6,7 @@ import {
   StatisticTitle,
   StatisticText,
     Statisticpercentage
-} from './Statistic.styled'
+} from './Statistics.styled'
 
 
 export const Statistic = ({ title, stats }) => { 
