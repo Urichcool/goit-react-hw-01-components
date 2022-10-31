@@ -29,18 +29,11 @@ height: 50px;
     if (props.transactionNumber % 2 === 0) {
       return '#D3D3D3;';
   };
+ return '#f0eeee;';
   }};
 `
 
 
 export const TransactionHistoryBodyItemText = styled.td`
-  border-right: ${props => {
-    if (props.transactionNumber % 2 !== 0) {
-      return 'solid 1px #D3D3D3;';
-    }
-  }};
   font-size: 18px;
-  &&:last-child {
-    border: none;
-  }
 `;
