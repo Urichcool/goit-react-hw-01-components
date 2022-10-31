@@ -9,13 +9,13 @@ import {
 export const TransactionHistoryBodyItem = ({ type, amount, currency, transactionNumber }) => {
   return (
     <TransactionHistoryBodyItemLine transactionNumber={transactionNumber}>
-      <TransactionHistoryBodyItemText transactionNumber={transactionNumber}>
+      <TransactionHistoryBodyItemText>
         {type}
       </TransactionHistoryBodyItemText>
-      <TransactionHistoryBodyItemText transactionNumber={transactionNumber}>
+      <TransactionHistoryBodyItemText>
         {amount}
       </TransactionHistoryBodyItemText>
-      <TransactionHistoryBodyItemText transactionNumber={transactionNumber}>
+      <TransactionHistoryBodyItemText>
         {currency}
       </TransactionHistoryBodyItemText>
     </TransactionHistoryBodyItemLine>
