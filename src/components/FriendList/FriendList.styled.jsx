@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import PropTypes from 'prop-types';
 
 export const FriendsListContainer = styled.ul`
   background-color: #f8f8f8;
